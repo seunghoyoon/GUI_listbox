@@ -1,14 +1,15 @@
 from Tkinter import *
 
-master = Tk()
-listbox = Listbox(master)
+root = Tk()
+listbox = Listbox(root)
 listbox.pack()
 
-x = ["1","2","3","4"] 
-y = ["one", "two", "three", "four"]   
 
-for i in range(len(y)):
-    z = y[i] + " " + x[i]
-    listbox.insert(END, z)
+arr = ['orange','green','sky']  
+
+
+for i in range(0,len(arr)):   
+    listbox.insert(END, arr[i])
+
 
 mainloop()
